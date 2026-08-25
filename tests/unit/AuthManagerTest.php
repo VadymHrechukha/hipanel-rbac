@@ -96,6 +96,7 @@ class AuthManagerTest extends \PHPUnit\Framework\TestCase
             'installment-plan.process',
             'document.see-history',
             'document.replace',
+            'ticket.export',
 
             // Roles
             'role:document.master',
@@ -146,6 +147,7 @@ class AuthManagerTest extends \PHPUnit\Framework\TestCase
             'role:owner-staff',
             'role:almighty',
             'role:installment-plan.manager',
+            'role:ticket.manager',
         ];
 
         $actualInternalItems = [];

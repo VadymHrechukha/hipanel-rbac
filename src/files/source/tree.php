@@ -529,7 +529,7 @@ return [
     ],
     'role:ticket.manager' => [
         'role:ticket.user', 'ticket.update', 'ticket.delete',
-        'ticket.read-templates', 'ticket.read-statistics',
+        'ticket.read-templates', 'ticket.read-statistics', 'ticket.export',
         'ticket.set-private', 'ticket.set-recipient', 'ticket.set-time',
     ],
     'role:beta-tester' => [

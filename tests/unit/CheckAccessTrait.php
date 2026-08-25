@@ -155,7 +155,7 @@ trait CheckAccessTrait
             'ip.read', 'service.read',
             'blacklist.read', 'blacklist.create', 'blacklist.update', 'blacklist.delete',
             'client.read-ip',
-            'ticket.read-templates', 'ticket.read-statistics', 'ticket.set-private', 'ticket.set-recipient', 'ticket.set-time',
+            'ticket.read-templates', 'ticket.read-statistics', 'ticket.export', 'ticket.set-private', 'ticket.set-recipient', 'ticket.set-time',
         ]);
     }
 
@@ -196,7 +196,7 @@ trait CheckAccessTrait
             'blacklist.read', 'blacklist.create', 'blacklist.update', 'blacklist.delete',
 
             'client.read-ip',
-            'ticket.read-templates', 'ticket.read-statistics', 'ticket.set-private', 'ticket.set-recipient', 'ticket.set-time',
+            'ticket.read-templates', 'ticket.read-statistics', 'ticket.export', 'ticket.set-private', 'ticket.set-recipient', 'ticket.set-time',
         ]);
     }
 
@@ -238,7 +238,7 @@ trait CheckAccessTrait
             'service.read', 'service.create', 'service.update', 'service.delete',
             'blacklist.read', 'blacklist.create', 'blacklist.update', 'blacklist.delete',
             'client.read-ip',
-            'ticket.read-templates', 'ticket.read-statistics', 'ticket.set-private', 'ticket.set-recipient', 'ticket.set-time',
+            'ticket.read-templates', 'ticket.read-statistics', 'ticket.export', 'ticket.set-private', 'ticket.set-recipient', 'ticket.set-time',
             'part.read-administrative',
             'see-no-mans',
         ]);
@@ -290,7 +290,7 @@ trait CheckAccessTrait
             'purse.set-credit','server.read-wizzard','server.read-legend', 'server.read-financial-info',
             'server.read-billing','plan.set-note',
             'client.read-financial-info', 'client.read-referral', 'client.read-deleted', 'client.read-ip',
-            'ticket.read-templates', 'ticket.read-statistics', 'ticket.set-private', 'ticket.set-recipient', 'ticket.set-time',
+            'ticket.read-templates', 'ticket.read-statistics', 'ticket.export', 'ticket.set-private', 'ticket.set-recipient', 'ticket.set-time',
             'target.read', 'target.create', 'target.update', 'target.delete',
         ]);
     }
@@ -335,7 +335,7 @@ trait CheckAccessTrait
             'purse.set-credit','server.read-wizzard','server.read-legend','server.read-financial-info',
             'server.read-billing','plan.set-note',
             'client.read-financial-info', 'client.read-referral', 'client.read-deleted', 'client.read-ip',
-            'ticket.read-templates', 'ticket.read-statistics', 'ticket.set-private', 'ticket.set-recipient', 'ticket.set-time',
+            'ticket.read-templates', 'ticket.read-statistics', 'ticket.export', 'ticket.set-private', 'ticket.set-recipient', 'ticket.set-time',
             'target.read', 'target.create', 'target.update', 'target.delete',
 
         ]);
@@ -381,7 +381,7 @@ trait CheckAccessTrait
             'purse.set-credit','server.read-wizzard','server.read-legend','server.read-financial-info',
             'server.read-billing', 'plan.set-note',
             'client.read-financial-info', 'client.read-referral', 'client.read-deleted', 'client.read-ip',
-            'ticket.read-templates', 'ticket.read-statistics', 'ticket.set-private', 'ticket.set-recipient', 'ticket.set-time',
+            'ticket.read-templates', 'ticket.read-statistics', 'ticket.export', 'ticket.set-private', 'ticket.set-recipient', 'ticket.set-time',
             'target.read', 'target.create', 'target.update', 'target.delete',
             'requisites.read',
         ]);
@@ -457,7 +457,7 @@ trait CheckAccessTrait
             'purse.set-credit','server.read-wizzard','server.read-legend','server.read-system-info', 'server.read-financial-info',
             'server.read-billing','server.assign-hub','plan.set-note',
             'client.read-financial-info', 'client.read-referral', 'client.read-deleted', 'client.read-ip',
-            'part.read-administrative', 'ticket.read-templates', 'ticket.read-statistics', 'ticket.set-private', 'ticket.set-recipient', 'ticket.set-time',
+            'part.read-administrative', 'ticket.read-templates', 'ticket.read-statistics', 'ticket.export', 'ticket.set-private', 'ticket.set-recipient', 'ticket.set-time',
             'see-no-mans',
             'target.read', 'target.create', 'target.update', 'target.delete',
             'requisites.read',
@@ -548,7 +548,7 @@ trait CheckAccessTrait
             'purse.set-credit','server.read-wizzard','server.read-legend','server.read-financial-info', 'server.read-system-info',
             'server.read-billing','server.assign-hub', 'plan.set-note',
             'client.read-financial-info', 'client.read-referral', 'client.read-deleted', 'client.read-ip',
-            'part.read-administrative', 'ticket.read-templates', 'ticket.read-statistics', 'ticket.set-private', 'ticket.set-recipient', 'ticket.set-time',
+            'part.read-administrative', 'ticket.read-templates', 'ticket.read-statistics', 'ticket.export', 'ticket.set-private', 'ticket.set-recipient', 'ticket.set-time',
 
             'see-no-mans', 'bill.charges.read', 'bill.charges.change_invoiced', 'bill.see-server-charges',
             'target.read', 'target.create', 'target.update', 'target.delete',

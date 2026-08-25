@@ -1178,6 +1178,7 @@ return [
             'ticket.delete',
             'ticket.read-templates',
             'ticket.read-statistics',
+            'ticket.export',
             'ticket.set-private',
             'ticket.set-recipient',
             'ticket.set-time',
@@ -3294,6 +3295,15 @@ return [
     'deny:ticket.read-statistics' => [
         'type' => 2,
         'description' => 'Prohibits viewing tickets statistics',
+    ],
+    'ticket.export' => [
+        'type' => 2,
+        'description' => 'Export tickets with full message threads for reporting',
+        'internal' => true,
+    ],
+    'deny:ticket.export' => [
+        'type' => 2,
+        'description' => 'Prohibits exporting tickets',
     ],
     'ticket.set-private' => [
         'type' => 2,
