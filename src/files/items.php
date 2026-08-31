@@ -1178,7 +1178,6 @@ return [
             'ticket.delete',
             'ticket.read-templates',
             'ticket.read-statistics',
-            'ticket.export',
             'ticket.set-private',
             'ticket.set-recipient',
             'ticket.set-time',
@@ -1217,6 +1216,7 @@ return [
             'role:audit.user',
             'role:installment-plan.manager',
             'document.see-history',
+            'ticket.export',
         ],
     ],
     'role:almighty' => [
@@ -3296,15 +3296,6 @@ return [
         'type' => 2,
         'description' => 'Prohibits viewing tickets statistics',
     ],
-    'ticket.export' => [
-        'type' => 2,
-        'description' => 'Export tickets with full message threads for reporting',
-        'internal' => true,
-    ],
-    'deny:ticket.export' => [
-        'type' => 2,
-        'description' => 'Prohibits exporting tickets',
-    ],
     'ticket.set-private' => [
         'type' => 2,
         'description' => 'Make private ticket answers',
@@ -3371,5 +3362,14 @@ return [
     'deny:owner-staff' => [
         'type' => 2,
         'description' => 'Prohibits owner-staff operation',
+    ],
+    'ticket.export' => [
+        'type' => 2,
+        'description' => 'Export tickets with full message threads for reporting',
+        'internal' => true,
+    ],
+    'deny:ticket.export' => [
+        'type' => 2,
+        'description' => 'Prohibits exporting tickets',
     ],
 ];

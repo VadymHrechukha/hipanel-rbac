@@ -147,7 +147,6 @@ class AuthManagerTest extends \PHPUnit\Framework\TestCase
             'role:owner-staff',
             'role:almighty',
             'role:installment-plan.manager',
-            'role:ticket.manager',
         ];
 
         $actualInternalItems = [];

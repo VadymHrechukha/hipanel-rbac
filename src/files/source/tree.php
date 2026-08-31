@@ -529,7 +529,7 @@ return [
     ],
     'role:ticket.manager' => [
         'role:ticket.user', 'ticket.update', 'ticket.delete',
-        'ticket.read-templates', 'ticket.read-statistics', 'ticket.export',
+        'ticket.read-templates', 'ticket.read-statistics',
         'ticket.set-private', 'ticket.set-recipient', 'ticket.set-time',
     ],
     'role:beta-tester' => [
@@ -555,6 +555,7 @@ return [
         'role:audit.user',
         'role:installment-plan.manager',
         'document.see-history',
+        'ticket.export',
     ],
     'role:almighty' => [
         'role:staff-admin',
