@@ -57,12 +57,30 @@ class AdvancedSearchActiveField extends ActiveField
     public function textarea($options = [])
     {
         AutosizeAsset::activate($this->form->getView(), '[data-autosize]');
+        $this->registerShiftEnterSubmit();
 
         return parent::textarea(ArrayHelper::merge([
             'data-autosize' => true, 'rows' => 1,
             'placeholder' => $this->model->getAttributeLabel($this->attribute),
             'style' => ['max-height' => '30vh'],
         ], $options));
+    }
+
+    /**
+     * Advanced search textareas accept multiple newline-separated values, so a plain Enter
+     * must keep inserting a newline. Shift+Enter submits the search instead.
+     */
+    private function registerShiftEnterSubmit()
+    {
+        $js = <<<JS
+$(document).on('keydown', '[data-autosize]', function (e) {
+    if (e.key === 'Enter' && e.shiftKey) {
+        e.preventDefault();
+        $(this).closest('form').trigger('submit');
+    }
+});
+JS;
+        $this->form->getView()->registerJs($js, \yii\web\View::POS_READY, 'advanced-search-textarea-shift-enter');
     }
 
     protected function getInputId()
